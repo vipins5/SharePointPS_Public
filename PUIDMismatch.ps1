@@ -2,8 +2,8 @@
 # CONFIG
 #################################################################
 $AdminSiteURL  = "https://domain-admin.sharepoint.com"
-$SiteCollAdmin = "admin@oceancloudconsults.onmicrosoft.com"
-$AffectedUser  = "user@oceancloudconsults.onmicrosoft.com"
+$SiteCollAdmin = "admin@domain.onmicrosoft.com"
+$AffectedUser  = "user@domain.onmicrosoft.com"
 $ReportMode    = $true   # DRY RUN if $true
 
 # === App-only (certificate) auth parameters ===
@@ -277,4 +277,5 @@ for ($i = 0; $i -lt $Total; $i += $BatchSize) {
 
 Add-ScriptLog Cyan "100% Completed - Finished running script"
 Add-ScriptLog Cyan "Report generated at $ReportOutput"
+
 
