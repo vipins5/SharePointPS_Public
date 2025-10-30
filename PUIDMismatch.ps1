@@ -1,17 +1,17 @@
 #################################################################
 # CONFIG
 #################################################################
-$AdminSiteURL  = "https://oceancloudconsults-admin.sharepoint.com"
-$SiteCollAdmin = "vipin@oceancloudconsults.onmicrosoft.com"
-$AffectedUser  = "bhavprita@oceancloudconsults.onmicrosoft.com"
+$AdminSiteURL  = "https://domain-admin.sharepoint.com"
+$SiteCollAdmin = "admin@oceancloudconsults.onmicrosoft.com"
+$AffectedUser  = "user@oceancloudconsults.onmicrosoft.com"
 $ReportMode    = $true   # DRY RUN if $true
 
 # === App-only (certificate) auth parameters ===
-$Tenant        = "oceancloudconsults.onmicrosoft.com"
-$ClientId      = "7147bbd7-b6d8-46c7-b6ae-d862c318c629"
+$Tenant        = "domain.onmicrosoft.com"
+$ClientId      = ""
 
 # EITHER: use cert thumbprint in CurrentUser\My
-$CertThumbprint = "ee349da6c000c7475af7caebfd9ab99843293393"
+$CertThumbprint = ""
 $UseThumbprint  = $true
 
 # OR: use PFX file
@@ -277,3 +277,4 @@ for ($i = 0; $i -lt $Total; $i += $BatchSize) {
 
 Add-ScriptLog Cyan "100% Completed - Finished running script"
 Add-ScriptLog Cyan "Report generated at $ReportOutput"
+
